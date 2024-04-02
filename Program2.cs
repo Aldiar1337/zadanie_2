@@ -29,5 +29,5 @@ class Program2
         {
             Console.WriteLine($" Поезд с таким номером {trainNumber} не был найден");
         }
-    }
+    
 }
