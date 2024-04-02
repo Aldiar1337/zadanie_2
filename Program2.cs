@@ -2,6 +2,19 @@
 
 class Program2
 {
+    
+    public class Train
+    {
+        public string Destination;
+        public int Number;
+        public string DepartureTime;
+
+        public void DisplayTrainInfo()
+        {
+            Console.WriteLine($"Поезд с номером {Number} следует в {Destination} и отправляется в {DepartureTime}");
+        }
+    }
+
     static void Main()
     {
         // Создаем массив объектов Train
@@ -24,10 +37,12 @@ class Program2
                 break;
             }
         }
-   
+
         if (!trainFound)
         {
             Console.WriteLine($" Поезд с таким номером {trainNumber} не был найден");
         }
-    
+
+    }
+
 }
