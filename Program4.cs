@@ -2,6 +2,7 @@
 
 public class Program4
 {
+
     class Program
     {
         static void Main()
@@ -22,6 +23,43 @@ public class Program4
             numbers.PrintIntegers();
             Console.WriteLine("Сумма чисел: " + numbers.SumIntegers());
             Console.WriteLine("Наибольшее число: " + numbers.MaxInteger());
+        }
+
+        class TwoIntegers
+        {
+            public int firstInteger;
+            public int secondInteger;
+
+
+            public void PrintIntegers()
+            {
+                Console.WriteLine("Первое число: " + firstInteger);
+                Console.WriteLine("Второе число: " + secondInteger);
+            }
+
+            public void ChangeIntegers(int newFirst, int newSecond)
+            {
+
+                firstInteger = newFirst;
+                secondInteger = newSecond;
+            }
+
+            public int SumIntegers()
+            {
+                return firstInteger + secondInteger;
+            }
+
+            public int MaxInteger()
+            {
+                if (firstInteger < secondInteger)
+                {
+                    return (secondInteger);
+                }
+                else
+                {
+                    return (firstInteger);
+                }
+            }
         }
     }
 }
