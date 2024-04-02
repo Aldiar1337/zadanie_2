@@ -10,7 +10,7 @@ class Program2
 
         public void DisplayTrainInfo()
         {
-            Console.WriteLine($"Поезд с номером {Number} следует в {Destination} и отправляется в {DepartureTime}");
+            Console.WriteLine($"Поезд с номером {Number} следует в {Destination} и отправляетсяя в {DepartureTime}");
         }
     }
 }
